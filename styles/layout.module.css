@@ -1,0 +1,46 @@
+.headerContainer{
+  position: absolute;
+  top: 0;
+color: white;
+  width: 100%;
+  background: transparent;
+  z-index: 3;
+
+
+}
+.headerContainer1{
+    position: fixed;
+    top: 0;
+    /* left: 20%; */
+    
+    background: white;
+    width: 100%;
+    color: black;
+    z-index: 3;
+}
+.headerContent{
+display: flex;
+
+justify-content: space-around;
+padding: 10px;
+align-items: center;
+}
+.headerContent span{
+    font-weight: 800;
+    cursor: pointer;
+}
+.headerContent span:hover{
+    color: blue;
+}
+.headerImg{
+    width: 190px;
+}
+.headerBody{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.headerSearch{
+
+}
