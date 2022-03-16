@@ -35,3 +35,11 @@ color: white;
   color: gray;
   
 }
+.placeList{
+  display: grid;
+
+grid-template-columns: 1fr 1fr 1fr;
+margin: 50px;
+
+border-bottom: 2px solid rgb(187, 179, 179);
+}

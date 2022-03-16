@@ -3,6 +3,28 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/layout";
+import Card from "../components/reusable/card";
+const array=[
+  {
+    date:"20.12.2021",
+    imgUrl:"/mountain.jpeg",
+    title:"The soaring spires of rock, alpine meadows and turquoise lakes of the Dolomites are simply stunning. Here’s how to capture the highlights of this remarkable landscape on a 1-week road trip itinerary."
+  },
+  {
+    date:"20.8.2021",
+    imgUrl:"https://anywhereweroam.com/wp-content/uploads/2021/06/dolomites-road-trip-guide-1.jpg",
+    title:"The soaring spires of rock, alpine meadows and turquoise lakes of the Dolomites are simply stunning. Here’s how to capture the highlights of this remarkable landscape on a 1-week road trip itinerary."
+  }, {
+    date:"20.8.2021",
+    imgUrl:"https://anywhereweroam.com/wp-content/uploads/2021/06/dolomites-road-trip-guide-1.jpg",
+    title:"The soaring spires of rock, alpine meadows and turquoise lakes of the Dolomites are simply stunning. Here’s how to capture the highlights of this remarkable landscape on a 1-week road trip itinerary."
+  },
+  {
+    date:"20.8.2021",
+    imgUrl:"https://anywhereweroam.com/wp-content/uploads/2021/06/dolomites-road-trip-guide-1.jpg",
+    title:"The soaring spires of rock, alpine meadows and turquoise lakes of the Dolomites are simply stunning. Here’s how to capture the highlights of this remarkable landscape on a 1-week road trip itinerary."
+  }
+]
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -42,7 +64,12 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.placeList}>
-            sad
+            {
+              array?.map((data:any,i)=>(
+<Card key={i} date={data.date} imgUrl={data?.imgUrl} title={data.title} />
+              ))
+            }
+         
           </div>
         </div>
       </Layout>
