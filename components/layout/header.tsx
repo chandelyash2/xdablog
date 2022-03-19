@@ -16,7 +16,6 @@ const Header:React.FC = () => {
 
             </div>
             <div className={styles.headerBody}>
-                <span>Explore</span>
                 <span>Places</span>
                 <span>Blog</span>
                 <span>About Us</span>
